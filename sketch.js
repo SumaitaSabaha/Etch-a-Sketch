@@ -9,6 +9,16 @@ for(let i = 0; i < 16; i++) {
         grid.style.border = "1px solid black";
         grid.style.background = "white"
         box.append(grid);
+        grid.addEventListener("mouseover", function(){
+            grid.style.background = randomColor();
+        });
     }
+}
 
+function randomColor() {
+    let color = [];
+    for(let i = 0; i < 3; i++) {
+        color.push(Math.floor(Math.random()*256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
 }
