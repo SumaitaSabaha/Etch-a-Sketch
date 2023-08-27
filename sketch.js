@@ -6,8 +6,8 @@ for(let i = 0; i < 16; i++) {
         const grid = document.createElement('div');
         grid.style.width = "30px";
         grid.style.height = "30px";
-        grid.style.border = "1px solid black";
-        grid.style.background = "white"
+        grid.style.border = "1px solid grey";
+        grid.style.background = "snow"
         box.append(grid);
         grid.addEventListener("mouseover", function(){
             grid.style.background = randomColor();
